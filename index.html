@@ -1,682 +1,565 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="FleetProof helps fleets and vehicle owners create traceable vehicle reports, compare changes and monitor administrative risk."
-  />
-  <meta
-    name="keywords"
-    content="FleetProof, vehicle reports, fleet monitoring, compliance, vehicle history, Peru"
-  />
-  <meta name="author" content="Blip" />
-  <meta name="theme-color" content="#0b5fc6" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetProof — Reportes vehiculares y monitoreo de flotas</title>
+    <meta name="description" content="Consulta antecedentes vehiculares en Perú, revisa reportes con fuentes y evidencias y monitorea cambios documentarios de tus vehículos con FleetProof.">
 
-  <title>FleetProof | Traceable vehicle reports and monitoring</title>
-
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
 
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="FleetProof home">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="assets/icons/fleetproof-logo-alone.svg" alt="" />
-        </span>
-
-        <span class="brand-copy">
-          <strong>FleetProof</strong>
-          <small>by Blip</small>
-        </span>
-      </a>
-
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="primary-nav"
-        aria-label="Open navigation menu"
-        data-i18n-aria="menuOpen"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
-        <a href="#product" data-i18n="navProduct">Product</a>
-        <a href="#solutions" data-i18n="navSolutions">Solutions</a>
-        <a href="#plans" data-i18n="navPlans">Plans</a>
-        <a href="#how-it-works" data-i18n="navHow">How it works</a>
-        <a href="#about" data-i18n="navAbout">About us</a>
-      </nav>
-
-      <div class="nav-actions">
-        <button class="language-button" type="button" id="language-button" aria-label="Switch language" data-i18n-aria="languageSwitch">
-          <span class="language-icon" aria-hidden="true">🌐</span>
-          <span id="language-label">ES</span>
-        </button>
-        <a class="text-link" id="login-link" href="https://fleetproof-webapp.netlify.app/login" data-i18n="login">Sign in</a>
-        <a class="button button-primary button-small" id="header-cta" href="https://fleetproof-webapp.netlify.app/register" data-i18n="start">Get started</a>
-      </div>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <section class="hero section-shell">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow" data-i18n="heroEyebrow">TRACEABLE VEHICLE REPORTS</p>
-          <h1>
-            <span data-i18n="heroTitle1">Know today.</span>
-            <span data-i18n="heroTitle2">Prevent tomorrow.</span>
-          </h1>
-          <p class="hero-lead" data-i18n="heroLead">
-            Create verifiable vehicle reports and monitor changes that may affect your fleet before they become an operational problem.
-          </p>
-
-          <div class="hero-actions">
-            <a
-              class="button button-primary"
-              id="fleet-hero-cta"
-              href="#"
-            >
-              <span data-i18n="ctaFleet">Monitor your fleet</span> <span aria-hidden="true">→</span>
-            </a>
-            <a
-              class="button button-secondary"
-              id="personal-hero-cta"
-              href="#"
-            >
-              <span data-i18n="ctaVehicle">Check a vehicle</span> <span aria-hidden="true">→</span>
-            </a>
-          </div>
-
-          <div class="hero-trust" aria-label="Product highlights" data-i18n-aria="highlightsAria">
-            <span data-i18n="heroTrust1">Traceable reports</span>
-            <span aria-hidden="true">•</span>
-            <span data-i18n="heroTrust2">Explainable findings</span>
-            <span aria-hidden="true">•</span>
-            <span data-i18n="heroTrust3">Continuous monitoring</span>
-          </div>
-        </div>
-
-        <div class="dashboard-preview reveal" aria-label="FleetProof dashboard preview">
-          <img
-            src="assets/images/dashboard-fleetproof.png"
-            alt="FleetProof dashboard preview with vehicle alerts and reports"
-            data-i18n-alt="dashboardAlt"
-            class="dashboard-preview-image"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="benefits section-shell" id="product">
-      <div class="container benefits-grid">
-        <article class="benefit reveal">
-          <span class="benefit-icon" aria-hidden="true">
-            <img src="assets/images/clock.svg" alt="" />
-          </span>
-          <h2 data-i18n="benefit1Title">Save time</h2>
-          <p data-i18n="benefit1Text">Consolidate information from different sources in one workflow.</p>
-        </article>
-
-        <article class="benefit reveal">
-          <span class="benefit-icon" aria-hidden="true">
-            <img src="assets/images/shield.svg" alt="" />
-          </span>
-          <h2 data-i18n="benefit2Title">Reduce uncertainty</h2>
-          <p data-i18n="benefit2Text">Identify observations, expirations and changes before they affect operations.</p>
-        </article>
-
-        <article class="benefit reveal">
-          <span class="benefit-icon" aria-hidden="true">
-            <img src="assets/images/traceability.svg" alt="" />
-          </span>
-          <h2 data-i18n="benefit3Title">Keep traceability</h2>
-          <p data-i18n="benefit3Text">Keep source, date, evidence and responsible person attached to every finding.</p>
-        </article>
-
-        <article class="benefit reveal">
-          <span class="benefit-icon" aria-hidden="true">
-            <img src="assets/images/team.svg" alt="" />
-          </span>
-          <h2 data-i18n="benefit4Title">Work as a team</h2>
-          <p data-i18n="benefit4Text">Assign cases, document regularization and close issues with evidence.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="solutions section-shell" id="solutions">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow" data-i18n="solutionsEyebrow">SOLUTIONS FOR EACH NEED</p>
-          <h2 data-i18n="solutionsTitle">Two ways to move forward. One goal.</h2>
-          <p data-i18n="solutionsLead">Reliable vehicle information for companies and individuals.</p>
-        </div>
-
-<div class="solution-grid">
-
-  <!-- EMPRESAS CON FLOTA -->
-  <article class="solution-card fleet-card reveal">
-
-    <div class="solution-visual">
-      <img
-        src="assets/images/fleets.jpg"
-        alt="Fleet of vehicles"
-        data-i18n-alt="fleetImageAlt"
-        class="solution-image"
-      >
-    </div>
-
-    <div class="solution-copy">
-      <span class="solution-badge" data-i18n="b2bBadge">
-        For companies
-      </span>
-
-      <h3 data-i18n="fleetTitle">
-        Fleet companies
-      </h3>
-
-      <p data-i18n="fleetText">
-        Monitor documentary risk across your fleet and act on each
-        observation before it impacts operations.
-      </p>
-
-      <ul class="check-list">
-        <li data-i18n="fleetPoint1">
-          Fleet dashboard and continuous monitoring
-        </li>
-
-        <li data-i18n="fleetPoint2">
-          Cases, owners and evidence
-        </li>
-
-        <li data-i18n="fleetPoint3">
-          Consolidated reports and exports
-        </li>
-      </ul>
-
-      <a
-        class="button button-primary"
-        id="fleet-solution-cta"
-        href="#"
-        data-i18n="ctaFleet"
-      >
-        Monitor your fleet
-      </a>
-    </div>
-
-  </article>
-
-
-  <!-- PROPIETARIOS / COMPRADORES -->
-  <article class="solution-card personal-card reveal">
-
-    <div class="solution-visual">
-      <img
-        src="assets/images/car.png"
-        alt="Vehicle for individual owners and buyers"
-        data-i18n-alt="personalImageAlt"
-        class="solution-image"
-      >
-    </div>
-
-    <div class="solution-copy">
-      <span class="solution-badge" data-i18n="b2cBadge">
-        For individuals
-      </span>
-
-      <h3 data-i18n="personalTitle">
-        Owners and buyers
-      </h3>
-
-      <p data-i18n="personalText">
-        Understand vehicle history, review findings and keep monitoring
-        your plate after the first check.
-      </p>
-
-      <ul class="check-list">
-        <li data-i18n="personalPoint1">
-          Individual, understandable report
-        </li>
-
-        <li data-i18n="personalPoint2">
-          Evidence and source traceability
-        </li>
-
-        <li data-i18n="personalPoint3">
-          Alerts when relevant changes appear
-        </li>
-      </ul>
-
-      <a
-        class="button button-secondary"
-        id="personal-solution-cta"
-        href="#"
-        data-i18n="ctaVehicle"
-      >
-        Check a vehicle
-      </a>
-    </div>
-
-  </article>
-
-</div>
-      </div>
-    </section>
-
-    <section class="workflow section-shell" id="how-it-works">
-      <div class="container">
-        <div class="section-heading center reveal">
-          <p class="eyebrow" data-i18n="howEyebrow">HOW IT WORKS</p>
-          <h2 data-i18n="howTitle">From scattered checks to a traceable decision</h2>
-          <p data-i18n="howLead">A simple workflow designed around evidence, comparison and follow-up.</p>
-        </div>
-
-        <ol class="workflow-grid">
-          <li class="workflow-step reveal">
-            <span>01</span>
-            <h3 data-i18n="step1Title">Register vehicles</h3>
-            <p data-i18n="step1Text">Add a plate manually or import a fleet from CSV.</p>
-          </li>
-          <li class="workflow-step reveal">
-            <span>02</span>
-            <h3 data-i18n="step2Title">Review sources</h3>
-            <p data-i18n="step2Text">Capture results, source, date and evidence through a structured checklist.</p>
-          </li>
-          <li class="workflow-step reveal">
-            <span>03</span>
-            <h3 data-i18n="step3Title">Compare and prioritize</h3>
-            <p data-i18n="step3Text">See what changed and identify vehicles that require attention.</p>
-          </li>
-          <li class="workflow-step reveal">
-            <span>04</span>
-            <h3 data-i18n="step4Title">Resolve and prove</h3>
-            <p data-i18n="step4Text">Assign a case, attach evidence and close the regularization traceably.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="comparison section-shell">
-      <div class="container comparison-grid">
-        <div class="comparison-copy reveal">
-          <p class="eyebrow" data-i18n="compareEyebrow">WHY FLEETPROOF</p>
-          <h2 data-i18n="compareTitle">More than a one-time PDF</h2>
-          <p data-i18n="compareLead">
-            The value is not only gathering data. FleetProof is designed to show what changed, what needs attention and how it was resolved.
-          </p>
-        </div>
-
-        <div class="comparison-table-wrap reveal" tabindex="0" aria-label="Comparison between a traditional report and FleetProof" data-i18n-aria="comparisonAria">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th scope="col" data-i18n="dimension">Dimension</th>
-                <th scope="col" data-i18n="traditional">Traditional report</th>
-                <th scope="col">FleetProof</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" data-i18n="moment">Moment</th>
-                <td data-i18n="traditionalMoment">One-time check</td>
-                <td data-i18n="fleetproofMoment">Check + recurring monitoring</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="analysisUnit">Analysis unit</th>
-                <td data-i18n="traditionalUnit">One plate</td>
-                <td data-i18n="fleetproofUnit">Vehicle and fleet</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="traceability">Traceability</th>
-                <td data-i18n="traditionalTrace">Final PDF</td>
-                <td data-i18n="fleetproofTrace">Source, date, evidence and owner</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="changes">Changes</th>
-                <td data-i18n="traditionalChanges">Manual comparison</td>
-                <td data-i18n="fleetproofChanges">Snapshot comparison</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="followup">Follow-up</th>
-                <td data-i18n="traditionalFollow">Outside the report</td>
-                <td data-i18n="fleetproofFollow">Cases, owners and closure evidence</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section class="plans-v2 section-shell" id="plans">
-      <div class="container">
-
-        <div class="plans-header reveal">
-          <p class="eyebrow" data-i18n="plansEyebrow">
-            SUBSCRIPTION PLANS
-          </p>
-
-          <h2 data-i18n="plansTitle">
-            Choose the perfect plan
-          </h2>
-
-          <p data-i18n="plansLead">
-            Initial academic proposal. Prices and limits must be validated with target users.
-          </p>
-        </div>
-
-
-        <div class="plans-grid">
-
-          <!-- PERSONAL -->
-          <article class="plan-card reveal">
-
-            <div class="plan-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 2.8l2.7 5.4 6 .9-4.3 4.2 1 6-5.4-2.8-5.4 2.8 1-6L3.3 9.1l6-.9L12 2.8z"
-                />
-              </svg>
-            </div>
-
-            <h3>Personal</h3>
-
-            <p
-              class="plan-audience"
-              data-i18n="personalAudience"
-            >
-              For owners and independent drivers.
-            </p>
-
-            <div class="plan-price">
-              <span data-price-pen="29" data-price-usd="7.73">S/ 29</span>
-              <small data-i18n="perMonth">/month</small>
-            </div>
-
-            <div class="plan-line"></div>
-
-            <ul class="plan-features">
-              <li data-i18n="personalPlan1">
-                1–2 vehicles
-              </li>
-
-              <li data-i18n="personalPlan2">
-                1 complete monthly check
-              </li>
-
-              <li data-i18n="personalPlan3">
-                History and alerts
-              </li>
-
-              <li data-i18n="personalPlan4">
-                1 user
-              </li>
-            </ul>
-
-            <a
-              href="#"
-              class="plan-button plan-button-outline plan-cta"
-              data-plan="personal"
-              data-i18n="start"
-            >
-              Get started
+    <!-- ================= NAVEGACIÓN (HEADER) ================= -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#inicio" class="logo">
+                <img src="img/logo-fleetproof.png" alt="FleetProof" height="60">
             </a>
 
-          </article>
-
-
-          <!-- FLEET STARTER -->
-          <article class="plan-card plan-card-featured reveal">
-
-            <span
-              class="popular-badge"
-              data-i18n="popular"
-            >
-              Most popular
-            </span>
-
-            <div class="plan-icon featured-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M4 17h16l-1.5-8-4 3-2.5-7-2.5 7-4-3L4 17z"
-                />
-                <path d="M5 20h14" />
-              </svg>
-            </div>
-
-            <h3>Fleet Starter</h3>
-
-            <p
-              class="plan-audience"
-              data-i18n="starterAudience"
-            >
-              For taxi, delivery and small fleets.
-            </p>
-
-            <div class="plan-price">
-              <span data-price-pen="99" data-price-usd="26.40">S/ 99</span>
-              <small data-i18n="perMonth">/month</small>
-            </div>
-
-            <div class="plan-line"></div>
-
-            <ul class="plan-features">
-              <li data-i18n="starterPlan1">
-                Up to 25 vehicles
-              </li>
-
-              <li data-i18n="starterPlan2">
-                CSV fleet import
-              </li>
-
-              <li data-i18n="starterPlan3">
-                Dashboard and consolidated reports
-              </li>
-
-              <li data-i18n="starterPlan4">
-                Cases and up to 5 users
-              </li>
-            </ul>
-
-            <a
-              href="#"
-              class="plan-button plan-button-primary plan-cta"
-              data-plan="starter"
-              data-i18n="start"
-            >
-              Get started
+            <!-- Menú normal para PC -->
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#about-blip">Sobre BLIP</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#precios">Precios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <a href="https://zesty-sorbet-f6d433.netlify.app/login" class="btn-demo" id="btnDemo">
+                Regístrate <span class="badge-demo">PILOTO 14 DÍAS</span> ➔
             </a>
 
-          </article>
+            <!-- Botón Hamburguesa para Móvil -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
 
+        <!-- Menú desplegable para móvil (oculto por defecto) -->
+        <div id="mobileMenu" style="display: none; background: white; padding: 20px; border-bottom: 1px solid #E2E8F0;">
+            <a href="#inicio" style="display: block; padding: 10px 0; color: #16324F; text-decoration: none; font-weight: 600;">Inicio</a>
+            <a href="#servicios" style="display: block; padding: 10px 0; color: #16324F; text-decoration: none; font-weight: 600;">Servicios</a>
+            <a href="#nosotros" style="display: block; padding: 10px 0; color: #16324F; text-decoration: none; font-weight: 600;">Nosotros</a>
+            <a href="#precios" style="display: block; padding: 10px 0; color: #16324F; text-decoration: none; font-weight: 600;">Precios</a>
+            <a href="#contacto" style="display: block; padding: 10px 0; color: #16324F; text-decoration: none; font-weight: 600;">Contacto</a>
+            <a href="https://zesty-sorbet-f6d433.netlify.app/register" style="display: block; margin-top: 10px; background: #087F8C; color: white; padding: 12px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 600;">Regístrate</a>
+        </div>
+    </header>
 
-          <!-- FLEET BUSINESS -->
-          <article class="plan-card reveal">
+    <main>
+        <!-- ================= HERO SECTION (INICIO) ================= -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
 
-            <span class="value-badge" data-i18n="bestValue">
-              Best value
-            </span>
+                <div class="hero-text-col">
+                    <div class="tags-row mb-2">
+                        <span class="tag-gray"><span class="dot-navy">●</span> Plataforma Nacional de Inteligencia Vehicular</span>
+                        <span class="text-xs text-gray ml-2 font-medium">● Reportes Inmediatos & Monitoreo Preventivo</span>
+                    </div>
+                    <div class="tags-row mb-4">
+                        <span class="tag-green">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Plataforma Inteligente de Investigación y Vigilancia Vehicular
+                        </span>
+                    </div>
 
-            <div class="plan-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M4 20V7l8-4 8 4v13"
-                />
-                <path d="M8 10h2M14 10h2M8 14h2M14 14h2" />
-                <path d="M10 20v-3h4v3" />
-              </svg>
+                    <h1 class="hero-title">Toda la información y monitoreo de tus vehículos en el Perú.</h1>
+                    <p class="hero-desc">Centralizamos consultas y cruces en tiempo real frente a <strong>SUNARP</strong>, <strong>SAT Lima y Callao</strong>, <strong>SUTRAN</strong> y <strong>CITV</strong>. Accede a reportes ejecutivos inmediatos o activa vigilancia continua con alertas preventivas para proteger tus unidades particulares o tu flota de transporte comercial.</p>
+
+                    <div class="action-buttons mb-4">
+                        <a href="#precios" class="btn-teal flex-1">Ver Planes y Precios ➔</a>
+                        <a href="#servicios" class="btn-outline flex-1">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            Conocer Servicios
+                        </a>
+                        <a href="#contacto" class="btn-whatsapp flex-1">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            Consultar por WhatsApp
+                        </a>
+                    </div>
+
+                    <a href="#about-blip" class="btn-outline mb-4">Ver video de FleetProof</a>
+
+                    <div class="hero-checklist">
+                        <span class="check-item"><span class="icon-check">✔</span> Cruce registral oficial SUNARP</span>
+                        <span class="check-item"><span class="icon-check">✔</span> Alertas preventivas por WhatsApp</span>
+                        <span class="check-item"><span class="icon-check">✔</span> Sin contratos ni letras chicas</span>
+                    </div>
+                </div>
+
+                <div class="hero-img-col">
+                    <div class="mockup-wrapper">
+                        <span class="mockup-top-tag"><span class="dot-green">●</span> Supervisión en tiempo real con SUNARP, SAT, SUTRAN y CITV</span>
+
+                        <img src="img/hero-image.png" alt="FleetProof Equipo" class="mockup-image">
+
+                        <div class="mockup-overlay-card">
+                            <div class="overlay-header">
+                                <span class="overlay-title">CENTRO OPERATIVO LIMA</span>
+                                <span class="overlay-badge">DETERMINÍSTICO</span>
+                            </div>
+                            <div class="overlay-stats">
+                                <div class="stat-col">
+                                    <span class="stat-label">Cobertura</span>
+                                    <strong class="stat-value text-white">100% Perú</strong>
+                                </div>
+                                <div class="stat-col">
+                                    <span class="stat-label">Respuesta</span>
+                                    <strong class="stat-value text-white">< 2 min</strong>
+                                </div>
+                                <div class="stat-col">
+                                    <span class="stat-label">Retenciones</span>
+                                    <strong class="stat-value text-green">0 casos</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about-blip" class="section-padding product-video-section" aria-labelledby="product-video-title">
+            <div class="container product-video-content">
+                <h2 class="section-title" id="product-video-title">Conoce FleetProof</h2>
+                <p class="section-desc">Mira cómo consultar una placa, revisar un reporte y dar seguimiento a tus vehículos.</p>
+                <video controls playsinline preload="metadata" poster="img/about-the-product.jpg?v=20261113" aria-label="Video About the Product de FleetProof">
+                    <source src="img/about-the-product.mp4?v=20261113" type="video/mp4">
+                </video>
+                <p><a href="https://drive.google.com/file/d/1k0bitM5iUU-4UJTjsc9pVj1xav-0AAPJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver en Google Drive</a></p>
+            </div>
+        </section>
+
+        <!-- SEPARADOR -->
+        <div class="container text-center mt-4">
+            <span class="section-subtitle">CONEXIÓN E INTEROPERABILIDAD EN TIEMPO REAL CON FUENTES OFICIALES DE LA REPÚBLICA DEL PERÚ</span>
+        </div>
+
+        <!-- ================= ENTIDADES OFICIALES ================= -->
+        <section class="entidades section-padding-sm">
+            <div class="container">
+                <div class="entities-grid">
+                    <div class="card-outline flex-start gap-1">
+                        <span class="icon-box-small text-md">🏢</span>
+                        <div><strong class="text-navy text-sm font-bold">SUNARP</strong><br><span class="text-xs text-gray">Propiedad y Gravámenes</span></div>
+                    </div>
+                    <div class="card-outline flex-start gap-1">
+                        <span class="icon-box-small text-md">📄</span>
+                        <div><strong class="text-navy text-sm font-bold">SAT Lima & Callao</strong><br><span class="text-xs text-gray">Papeletas e Impuesto Vehicular</span></div>
+                    </div>
+                    <div class="card-outline flex-start gap-1">
+                        <span class="icon-box-small text-md">🚛</span>
+                        <div><strong class="text-navy text-sm font-bold">SUTRAN</strong><br><span class="text-xs text-gray">Fiscalización en Red Nacional</span></div>
+                    </div>
+                    <div class="card-outline flex-start gap-1">
+                        <span class="icon-box-small text-md">🪪</span>
+                        <div><strong class="text-navy text-sm font-bold">MTC & CITV</strong><br><span class="text-xs text-gray">Récord de Choferes y Revisiones</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVICIOS ================= -->
+        <section id="servicios" class="section-padding bg-gray">
+            <div class="container text-center">
+                <span class="badge-dark mb-2">CAPÍTULO I & II • CORE SOLUTION CAPABILITIES</span>
+                <h2 class="section-title">Servicios diseñados bajo Lean UX y Lenguaje Ubicuo de Transporte.</h2>
+                <p class="section-desc mb-4">Eliminamos la ambigüedad operativa con una arquitectura modular que conecta investigación documental, semaforización determinística y flujos de resolución con validez legal.</p>
+
+                <div class="grid-2 mt-4 text-left gap-2 align-items-stretch">
+                    <div class="image-card">
+                        <img src="img/servicios-image.png" alt="Inspección" class="image-card-bg">
+                        <div class="image-card-overlay"></div>
+                        <div class="image-card-top"><span class="badge-white">📋 Verificación Física + Digital</span></div>
+                        <div class="image-card-bottom">
+                            <span class="badge-teal mb-1">INSPECCIÓN TÉCNICA EN TERRENO</span>
+                            <h3 class="text-white mb-1">Validación continua para jefaturas de flota y talleres</h3>
+                            <p class="text-white text-sm">Checklists estructurados que sincronizan el estado visual y mecánico de la unidad con el historial administrativo oficial de papeletas y gravámenes.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-2 gap-2">
+                        <div class="card-white">
+                            <div class="flex-between mb-1"><span class="icon-box">✓=</span><span class="badge-dark-small">PILAR 01</span></div>
+                            <h4 class="text-teal text-xs mb-1 font-bold">CHECKLIST POR FUENTE</h4>
+                            <h3 class="text-navy text-md mb-1 font-bold">Investigación Exhaustiva Multi-Entidad</h3>
+                            <p class="text-sm mb-2 text-gray">Cruce simultáneo de SUNARP, SAT Lima y Callao, SUTRAN y CITV, reduciendo omisiones documentarias al 0%.</p>
+                            <p class="text-xs text-green font-bold">● Elimina discrepancias registrales</p>
+                        </div>
+                        <div class="card-white">
+                            <div class="flex-between mb-1"><span class="icon-box">🚦</span><span class="badge-dark-small">PILAR 02</span></div>
+                            <h4 class="text-teal text-xs mb-1 font-bold">LEAN ANALYTICS</h4>
+                            <h3 class="text-navy text-md mb-1 font-bold">Semáforo Determinístico de Riesgo</h3>
+                            <p class="text-sm mb-2 text-gray">Evaluación estandarizada basada en la tipificación de infracciones (Leve, Grave, Muy Grave MTC).</p>
+                            <p class="text-xs text-orange font-bold">● Evaluación objetiva sin sesgo</p>
+                        </div>
+                        <div class="card-white">
+                            <div class="flex-between mb-1"><span class="icon-box">🔔</span><span class="badge-dark-small">PILAR 03</span></div>
+                            <h4 class="text-teal text-xs mb-1 font-bold">ALERTAS PREVENTIVAS</h4>
+                            <h3 class="text-navy text-md mb-1 font-bold">Monitoreo Continuo y Cronograma</h3>
+                            <p class="text-sm mb-2 text-gray">Vigilancia ininterrumpida 24/7 con disparadores automáticos a 30, 15 y 5 días antes del vencimiento de SOAT o CITV.</p>
+                            <p class="text-xs text-orange font-bold">● Notificación WhatsApp & Email</p>
+                        </div>
+                        <div class="card-white">
+                            <div class="flex-between mb-1"><span class="icon-box">☑</span><span class="badge-dark-small">PILAR 04</span></div>
+                            <h4 class="text-teal text-xs mb-1 font-bold">UBIQUITOUS LANGUAGE</h4>
+                            <h3 class="text-navy text-md mb-1 font-bold">Gestión de Casos (Resolution Case)</h3>
+                            <p class="text-sm mb-2 text-gray">Flujo formal para solventar observaciones: asignación a responsables con subida de vouchers de pago.</p>
+                            <p class="text-xs text-teal font-bold">● Auditoría legal blindada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= NOSOTROS ================= -->
+        <section id="nosotros" class="section-padding">
+            <div class="container grid-2 gap-4">
+                <!-- TARJETA DE IMAGEN NOSOTROS -->
+                <div class="image-card">
+                    <img src="img/nosotros-image.png" alt="Equipo" class="image-card-bg">
+                    <div class="image-card-overlay"></div>
+                    <div class="image-card-bottom mt-auto">
+                        <span class="badge-teal mb-1">STARTUP BLIP • FLEET OPERATIONS</span>
+                        <h3 class="text-white mb-1">Mesa operativa y soporte automotor en Lima</h3>
+                        <p class="text-white text-sm">Especialistas en la casuística de retenciones del SAT, directivas de transporte SUTRAN y trámites notariales vehiculares.</p>
+                    </div>
+                </div>
+
+                <div class="flex-column">
+                    <div>
+                        <span class="badge-dark mb-2">STARTUP PROFILE & EQUIPO FUNDADOR</span>
+                        <h2 class="section-title text-left mb-2">Ingeniería de software aplicada al transporte formal peruano.</h2>
+                        <p class="text-sm mb-4">FleetProof es un producto concebido y desarrollado por la startup BLIP, fundada por los ingenieros de software de la Universidad Peruana de Ciencias Aplicadas (UPC). Nace de la necesidad imperiosa de transformar la gestión vehicular en el Perú.</p>
+                    </div>
+
+                    <div class="grid-2 gap-2 mb-4">
+                        <div class="card-light-gray">
+                            <h4 class="text-navy text-xs mb-1 font-bold">👩‍💼 ROXANA LIMO</h4>
+                            <p class="text-teal text-xs font-bold mb-1">Jefa de Marcas & Operaciones</p>
+                            <p class="text-xs">Supervisa unidades comerciales entre sedes. Requiere visibilidad en tiempo real, control de choferes y cero inmovilizaciones.</p>
+                        </div>
+                        <div class="card-light-gray">
+                            <h4 class="text-navy text-xs mb-1 font-bold">👨‍💼 CRISTHIAN AMAYA</h4>
+                            <p class="text-teal text-xs font-bold mb-1">Consultor Automotor Senior</p>
+                            <p class="text-xs">Asesora a compradores particulares y empresas en adquisición de seminuevos. Requiere reportes ejecutivos blindados.</p>
+                        </div>
+                    </div>
+
+                    <ul class="checklist-vertical text-sm text-gray mb-4">
+                        <li class="mb-2">
+                            <span class="icon-check">✔</span>
+                            <span><strong class="text-navy">Trazabilidad Inmutable:</strong> Registro auditado con sellado de tiempo en cada resolución para protección legal.</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="icon-check">✔</span>
+                            <span><strong class="text-navy">Semáforo Determinístico:</strong> Lógica basada en reglas sin discrecionalidad para auditorías de cumplimiento ISO 39001.</span>
+                        </li>
+                    </ul>
+
+                    <div class="grid-3 gap-2 mt-auto">
+                        <div class="card-outline text-center"><h2 class="text-navy" style="font-size:32px;">-75%</h2><p class="text-xs text-gray mt-1">Tiempo de verificación</p></div>
+                        <div class="card-outline text-center"><h2 class="text-navy" style="font-size:32px;">0</h2><p class="text-xs text-gray mt-1">Retenciones prevenibles</p></div>
+                        <div class="card-outline text-center"><h2 class="text-navy" style="font-size:32px;">100%</h2><p class="text-xs text-gray mt-1">Sustento probatorio</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PRECIOS ================= -->
+        <section id="precios" class="section-padding bg-gray text-center">
+            <div class="container">
+                <span class="badge-teal mb-2">TARIFAS CLARAS Y FLEXIBLES</span>
+                <h2 class="section-title">Planes transparentes para propietarios y flotas comerciales.</h2>
+                <p class="section-desc mb-4">Elige entre consultas por única vez o monitoreo continuo en el tiempo que necesites (semana, mes o año). Sin contratos forzados ni penalidades.</p>
+
+                <div class="grid-4 mt-4 text-left gap-2 align-items-stretch">
+                    <!-- Plan 1 -->
+                    <div class="card-white pricing-card flex-column">
+                        <span class="badge-light">Consulta Individual</span>
+                        <h3 class="text-navy mt-2 mb-1">Reporte por Placa</h3>
+                        <p class="text-xs mb-4">Paga cada vez que quieras revisar un vehículo usado o de trabajo sin ataduras.</p>
+                        <p class="price">S/ 15 <span class="text-xs font-normal">/ consulta única</span></p>
+                        <p class="text-xs mb-4 pb-2 border-bottom">Entrega inmediata en PDF y acceso al reporte digital.</p>
+                        <ul class="features text-xs flex-grow mb-4">
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Cruce SUNARP: propiedad y gravámenes</li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> SAT Lima y Callao: papeletas e impuestos</li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Fiscalización SUTRAN y récord MTC</li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Reporte ejecutivo en <strong>PDF al instante</strong></li>
+                        </ul>
+                        <a href="https://zesty-sorbet-f6d433.netlify.app/app/reports" class="btn-outline-full mt-auto">Obtener Reporte ➔</a>
+                    </div>
+
+                    <!-- Plan 2 -->
+                    <div class="card-white pricing-card border-teal flex-column">
+                        <span class="badge-teal">RECOMENDADO PARA COMPRA SEGURA</span>
+                        <h3 class="text-navy mt-2 mb-1">Reporte con Asesoría</h3>
+                        <p class="text-xs mb-4">Reporte exhaustivo + atención y asesoramiento experto directamente por WhatsApp.</p>
+                        <p class="price">S/ 39 <span class="text-xs font-normal">/ por consulta</span></p>
+                        <p class="text-xs mb-4 pb-2 border-bottom">Incluye especialista automotor que revisa el caso contigo.</p>
+                        <ul class="features text-xs flex-grow mb-4">
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> <strong>Todo lo del Reporte por Placa</strong></li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Derivación <strong>directa a WhatsApp</strong></li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Interpretación experta de gravámenes y embargos</li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Orientación antes de firmar en notaría</li>
+                        </ul>
+                        <a href="#contacto" class="btn-teal-full mt-auto">💬 Solicitar Asesoría</a>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="card-white pricing-card flex-column">
+                        <span class="badge-light">1 Vehículo Particular</span>
+                        <h3 class="text-navy mt-2 mb-1">Monitoreo Individual</h3>
+                        <p class="text-xs mb-4 pb-2 border-bottom">Vigilancia continua de un vehículo particular con alertas automáticas.</p>
+                        <div class="price-rows text-sm mb-4 pb-2 border-bottom">
+                            <div class="flex-between mb-2"><span>1 Semana:</span> <strong>S/ 9</strong></div>
+                            <div class="flex-between mb-2"><span>1 Mes:</span> <strong>S/ 25</strong></div>
+                            <div class="flex-between"><span>1 Año:</span> <div class="text-right"><strong>S/ 190</strong><br><span class="text-teal text-xs font-bold">Ahorra 35%</span></div></div>
+                        </div>
+                        <ul class="features text-xs flex-grow mb-4">
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Monitoreo 24/7 de <strong>1 placa seleccionada</strong></li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Alertas instantáneas de infracciones</li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Recordatorios de <strong>SOAT y Revisión Técnica</strong></li>
+                        </ul>
+                        <a href="https://zesty-sorbet-f6d433.netlify.app/app/subscriptions" class="btn-outline-full mt-auto">Activar Monitoreo 🔔</a>
+                    </div>
+
+                    <!-- Plan 4 -->
+                    <div class="card-navy pricing-card flex-column">
+                        <span class="badge-teal" style="background:#0E5A6A;">PARA EMPRESAS Y FLOTAS</span>
+                        <h3 class="text-white mt-2 mb-1">Monitoreo de Flotas</h3>
+                        <p class="text-xs text-light-gray mb-4 pb-2 border-bottom-dark">Vigilancia continua para flotas comerciales, taxis y logística con control centralizado.</p>
+                        <div class="price-rows text-sm text-white mb-4 pb-2 border-bottom-dark">
+                            <div class="flex-between mb-2"><span>1 Sem. (hasta 10 veh.):</span> <strong>S/ 49</strong></div>
+                            <div class="flex-between highlight-row mb-2"><span>1 Mes (hasta 15 veh.):</span> <strong>S/ 149</strong></div>
+                            <div class="flex-between"><span>1 Año (hasta 15 veh.):</span> <div class="text-right"><strong>S/ 1,390</strong><br><span class="text-xs text-light-gray">Soporte Prioritario</span></div></div>
+                        </div>
+                        <ul class="features text-xs text-white flex-grow mb-4">
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Monitoreo centralizado de <strong>múltiples unidades</strong></li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Alertas para <strong>evitar retenciones</strong></li>
+                            <li class="mb-2"><span class="text-teal font-bold">✔</span> Carga masiva en <strong>Excel / CSV</strong></li>
+                        </ul>
+                        <a href="https://zesty-sorbet-f6d433.netlify.app/app/subscriptions" class="btn-teal-full mt-auto" style="background:#0E5A6A;">Monitorear Flota 🚛</a>
+                    </div>
+                </div>
+
+                <div class="card-white mt-4 text-left border-left-teal">
+                    <h4 class="text-teal mb-2">🛡 Garantía de Cero Retenciones Preventivas FleetProof</h4>
+                    <p class="text-xs mb-2 text-gray">Nuestro sistema determinístico garantiza que si tu flota mantiene su semáforo en color verde en la plataforma, no sufrirás inmovilizaciones por vencimientos documentarios u órdenes de captura preexistentes en operativos de fiscalización.</p>
+                    <div class="tags-row mt-2">
+                        <span class="bg-gray p-1 border-radius text-xs text-gray"><span class="text-teal font-bold mr-1">✔</span> Detección de capturas SAT Lima/Callao</span>
+                        <span class="bg-gray p-1 border-radius text-xs text-gray"><span class="text-teal font-bold mr-1">✔</span> Avisos de vencimiento CITV / SOAT</span>
+                        <span class="bg-gray p-1 border-radius text-xs text-gray"><span class="text-teal font-bold mr-1">✔</span> Soporte legal documentado 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto" class="section-padding">
+            <div class="container text-center">
+                <span class="badge-teal mb-2">CANALES DE CONTACTO DIRECTO</span>
+                <h2 class="section-title">Conversemos sobre la gestión y el riesgo de tus vehículos.</h2>
+                <p class="section-desc mb-4">Coordina una demostración técnica personalizada con nuestros ingenieros y consultores automotores en Lima, Perú.</p>
+
+                <div class="grid-2 mt-4 text-left align-items-start gap-4">
+
+                    <div class="contact-info">
+                        <div class="card-white mb-2 border-shadow">
+                            <h3 class="text-navy mb-4">Canales Oficiales en Lima, Perú</h3>
+
+                            <div class="flex-start mb-4">
+                                <span class="icon-circle">📍</span>
+                                <div>
+                                    <h4 class="text-navy text-xs mb-1">SEDE CENTRAL Y OPERACIONES</h4>
+                                    <p class="text-xs text-gray">Av. Javier Prado Este 4200, Santiago de Surco, Lima, Perú</p>
+                                </div>
+                            </div>
+
+                            <div class="flex-start mb-4">
+                                <span class="icon-circle">@</span>
+                                <div>
+                                    <h4 class="text-navy text-xs mb-1">CORREO CORPORATIVO</h4>
+                                    <a href="mailto:contacto@fleetproof.pe" class="text-teal text-xs font-bold">contacto@fleetproof.pe</a>
+                                    <p class="text-xs text-gray mt-1">Respuesta garantizada en menos de 2 horas hábiles</p>
+                                </div>
+                            </div>
+
+                            <div class="flex-start">
+                                <span class="icon-circle">📞</span>
+                                <div>
+                                    <h4 class="text-navy text-xs mb-1">CENTRAL DE ATENCIÓN & WHATSAPP</h4>
+                                    <p class="text-teal text-xs font-bold">+51 1 700 8920 / +51 984 321 000</p>
+                                    <p class="text-xs text-gray mt-1">Lunes a Viernes: 8:00 AM – 7:00 PM | Sábados: 9:00 AM – 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-navy">
+                            <h4 class="text-white mb-2">🚨 Atención Técnica a Emergencias en Ruta</h4>
+                            <p class="text-xs text-light-gray">Mesa de ayuda prioritaria y despacho de sustento registral digital ante intervenciones de fiscalización policial, operativos coactivos del SAT o inspecciones SUTRAN en carretera nacional.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-white border-shadow p-form">
+                        <h3 class="text-navy mb-1">Solicitar Demostración o Cotización</h3>
+                        <p class="text-xs text-gray mb-4">Completa el formulario y un especialista automotor se comunicará contigo.</p>
+
+                        <form id="contactForm">
+                            <div class="grid-2 gap-2 mb-2">
+                                <div>
+                                    <label class="form-label">NOMBRE COMPLETO *</label>
+                                    <input type="text" class="form-input" placeholder="Ej. Roxana Limo" required>
+                                </div>
+                                <div>
+                                    <label class="form-label">EMPRESA / RAZÓN SOCIAL *</label>
+                                    <input type="text" class="form-input" placeholder="Ej. Transporte Andino S.A.C." required>
+                                </div>
+                            </div>
+                            <div class="grid-2 gap-2 mb-2">
+                                <div>
+                                    <label class="form-label">SEGMENTO DE USUARIO *</label>
+                                    <select class="form-input" required>
+                                        <option value="">Selecciona un plan...</option>
+                                        <option>Plan 1: Reporte por Placa</option>
+                                        <option>Plan 2: Reporte con Asesoría</option>
+                                        <option>Plan 3: Monitoreo Individual</option>
+                                        <option>Plan 4: Monitoreo de Flotas</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="form-label">RANGO DE UNIDADES A MONITOREAR *</label>
+                                    <select class="form-input" required>
+                                        <option value="">Selecciona la cantidad...</option>
+                                        <option>1 vehículo (Particular)</option>
+                                        <option>2 a 5 vehículos</option>
+                                        <option>6 a 15 vehículos</option>
+                                        <option>Más de 15 vehículos</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">CORREO ELECTRÓNICO CORPORATIVO *</label>
+                                <input type="email" class="form-input" placeholder="nombre@empresa.pe" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">MENSAJE O PLACAS A VERIFICAR</label>
+                                <textarea class="form-input" rows="3" placeholder="Detalla tus requerimientos de control..." required></textarea>
+                            </div>
+                            <div class="flex-start gap-1 mb-4 align-items-start">
+                                <input type="checkbox" id="terms" required style="margin-top: 2px;">
+                                <label for="terms" class="text-xs text-gray">Acepto la política de privacidad y tratamiento de datos de conformidad con la Ley N° 29733.</label>
+                            </div>
+                            <button type="submit" class="btn-teal-full">Enviar Solicitud de Demostración ➔</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-navy text-white pt-4 pb-2 mt-4">
+        <div class="container">
+            <div class="grid-4 gap-4 mb-4">
+                <div class="col-span-1">
+                    <img src="img/logo-fleetproof.png" alt="FleetProof" height="60" class="mb-2" style="filter: brightness(0) invert(1);">
+                    <p class="text-xs text-light-gray mb-4 mt-2">Plataforma analítica e inteligente de investigación y monitoreo vehicular para flotas en el Perú. Desarrollada por la startup BLIP en Lima, Perú.</p>
+                    <span class="badge-dark-small text-xs px-2 py-1 bg-opacity" style="border: 1px solid #334155;">● Interoperabilidad 100% oficial</span>
+                </div>
+
+                <div>
+                    <h4 class="text-xs mb-2 text-light-gray" style="letter-spacing: 1px;">NAVEGACIÓN</h4>
+                    <ul class="footer-links text-sm">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs mb-2 text-light-gray" style="letter-spacing: 1px;">FUENTES CONECTADAS</h4>
+                    <ul class="footer-links text-sm text-light-gray">
+                        <li class="mb-2">SUNARP Registral</li>
+                        <li class="mb-2">SAT Lima & SAT Callao</li>
+                        <li class="mb-2">SUTRAN Red Vial Nacional</li>
+                        <li class="mb-2">MTC Récord de Conductor</li>
+                        <li class="mb-2">CITV Revisiones Técnicas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs mb-2 text-light-gray" style="letter-spacing: 1px;">ATENCIÓN CORPORATIVA</h4>
+                    <ul class="footer-links text-sm">
+                        <li><a href="mailto:contacto@fleetproof.pe">contacto@fleetproof.pe</a></li>
+                        <li class="text-light-gray mt-2 mb-2">+51 1 700 8920</li>
+                        <li class="text-light-gray mb-2">Surco, Lima, Perú</li>
+                    </ul>
+                </div>
             </div>
 
-            <h3>Fleet Business</h3>
-
-            <p
-              class="plan-audience"
-              data-i18n="businessAudience"
-            >
-              For medium fleet operators.
-            </p>
-
-            <div class="plan-price">
-              <span data-price-pen="299" data-price-usd="79.73">S/ 299</span>
-              <small data-i18n="perMonth">/month</small>
+            <div class="flex-between text-xs text-light-gray border-top-dark pt-4 mt-4">
+                <p>© 2026 FleetProof Perú S.A.C. Todos los derechos reservados.</p>
+                <div class="flex-start gap-4">
+                    <span>🔒 Cifrado TLS 256-bit Seguro</span>
+                    <span>Cumplimiento Ley N° 29733</span>
+                </div>
             </div>
-
-            <div class="plan-line"></div>
-
-            <ul class="plan-features">
-              <li data-i18n="businessPlan1">
-                Up to 100–150 vehicles
-              </li>
-
-              <li data-i18n="businessPlan2">
-                Branches and user roles
-              </li>
-
-              <li data-i18n="businessPlan3">
-                Audit trail and more checks
-              </li>
-
-              <li data-i18n="businessPlan4">
-                Exports and priority support
-              </li>
-            </ul>
-
-            <a
-              href="#"
-              class="plan-button plan-button-outline plan-cta"
-              data-plan="business"
-              data-i18n="contactSales"
-            >
-              Contact sales
-            </a>
-
-          </article>
-
         </div>
+    </footer>
+    <!-- ================= SCRIPTS (Menú Móvil y Formulario) ================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- 1. Lógica del Menú Móvil (Hamburguesa) ---
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
 
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    // Alterna entre mostrar y ocultar el menú
+                    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+                        mobileMenu.style.display = 'block';
+                        mobileMenuBtn.innerHTML = '✕'; // Cambia ícono a 'cerrar'
+                    } else {
+                        mobileMenu.style.display = 'none';
+                        mobileMenuBtn.innerHTML = '☰'; // Cambia ícono a 'hamburguesa'
+                    }
+                });
 
-        <p
-          class="plans-footer-note"
-          data-i18n="pricingNote"
-        >
-          The one-time report can remain available as an additional
-          purchase. Subscription limits must be enforced by the product,
-          not only displayed on this page.
-        </p>
+                // Cerrar el menú automáticamente al hacer clic en un enlace
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.style.display = 'none';
+                        mobileMenuBtn.innerHTML = '☰';
+                    });
+                });
+            }
 
-      </div>
-    </section>
+            // --- 2. Manejo básico del envío del formulario de cotización ---
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const btn = form.querySelector('button[type="submit"]');
+                    const textoOriginal = btn.innerHTML;
 
-    <section class="sources section-shell">
-      <div class="container sources-inner reveal">
-        <div>
-          <p class="eyebrow" data-i18n="sourcesEyebrow">TRACEABILITY FIRST</p>
-          <h2 data-i18n="sourcesTitle">Source and date attached to every result</h2>
-          <p data-i18n="sourcesText">
-            FleetProof is designed to consolidate permitted public information and authorized providers without presenting itself as an official source.
-          </p>
-        </div>
+                    // Estado de interacción de envío
+                    btn.innerHTML = 'Enviando...';
+                    btn.style.opacity = '0.7';
 
-        <div class="source-badges" aria-label="Example information sources" data-i18n-aria="sourcesAria">
-          <span>SUTRAN</span>
-          <span>SAT</span>
-          <span data-i18n="publicSources">Public sources</span>
-          <span data-i18n="authorizedProviders">Authorized providers</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="about section-shell" id="about">
-      <div class="container about-grid">
-        <div class="about-copy reveal">
-          <p class="eyebrow" data-i18n="aboutEyebrow">ABOUT THE PRODUCT</p>
-          <h2 data-i18n="aboutTitle">A safer way to understand vehicle status</h2>
-          <p data-i18n="aboutText">
-            FleetProof is an academic software project by Blip focused on traceable vehicle intelligence, continuous monitoring and collaborative resolution workflows.
-          </p>
-          <p class="disclaimer" data-i18n="aboutDisclaimer">
-            FleetProof does not replace official certificates or legal advice. Every result must preserve its source, consultation date and evidence.
-          </p>
-        </div>
-
-        <div class="video-placeholder reveal" role="img" aria-label="Placeholder for the About the Product video" data-i18n-aria="videoAria">
-          <div class="video-play" aria-hidden="true">▶</div>
-          <strong data-i18n="videoTitle">About the Product video</strong>
-          <span data-i18n="videoText">Replace this block with your final YouTube embed when it is available.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="container final-cta-inner reveal">
-        <div>
-          <p class="eyebrow light" data-i18n="finalEyebrow">FLEET IN COMPLIANCE. FEWER SURPRISES.</p>
-          <h2 data-i18n="finalTitle">Start today with FleetProof</h2>
-          <p data-i18n="finalText">Less uncertainty. More control. Vehicle by vehicle.</p>
-        </div>
-
-        <div class="final-actions">
-          <a class="button button-light" id="fleet-final-cta" href="#" data-i18n="ctaFleet">Monitor your fleet</a>
-          <a class="button button-ghost-light" id="personal-final-cta" href="#" data-i18n="ctaVehicle">Check a vehicle</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-top">
-      <a class="brand footer-brand" href="#top" aria-label="FleetProof home">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="assets/icons/fleetproof-logo-alone.svg" alt="" />
-        </span>
-
-        <span class="brand-copy">
-          <strong>FleetProof</strong>
-          <small>by Blip</small>
-        </span>
-      </a>
-
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#product" data-i18n="navProduct">Product</a>
-        <a href="#plans" data-i18n="navPlans">Plans</a>
-        <a href="#how-it-works" data-i18n="navHow">How it works</a>
-        <a href="#about" data-i18n="navAbout">About us</a>
-      </nav>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© 2026 Blip.</span>
-      <div class="footer-links">
-        <button class="footer-link legal-trigger" type="button" data-legal="terms" data-i18n="terms">Terms</button>
-        <button class="footer-link legal-trigger" type="button" data-legal="privacy" data-i18n="privacy">Privacy</button>
-      </div>
-      <span data-i18n="academicNote">Academic working document. Names, prices and metrics require validation.</span>
-    </div>
-  </footer>
-
-  <noscript>
-    <div class="noscript-message">
-      JavaScript is disabled. The page remains readable, but the mobile navigation requires JavaScript.
-    </div>
-  </noscript>
-  
-  <div class="modal-backdrop" id="legal-modal" hidden>
-    <section class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-title" tabindex="-1">
-      <button class="modal-close" type="button" id="modal-close" aria-label="Close dialog">×</button>
-      <div id="legal-content"></div>
-    </section>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
+                    setTimeout(() => {
+                        alert("Este formulario es de demostración. Para enviar tu consulta, escribe a contacto@fleetproof.pe.");
+                        form.reset();
+                        btn.innerHTML = textoOriginal;
+                        btn.style.opacity = '1';
+                    }, 1500);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
