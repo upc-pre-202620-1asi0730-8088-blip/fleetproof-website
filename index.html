@@ -62,8 +62,8 @@
           <span class="language-icon" aria-hidden="true">🌐</span>
           <span id="language-label">ES</span>
         </button>
-        <a class="text-link" id="login-link" href="https://fleetproof-webapp.netlify.app/login" data-i18n="login">Sign in</a>
-        <a class="button button-primary button-small" id="header-cta" href="https://fleetproof-webapp.netlify.app/register" data-i18n="start">Get started</a>
+        <a class="text-link" id="login-link" href="https://zesty-sorbet-f6d433.netlify.app/login" data-i18n="login">Sign in</a>
+        <a class="button button-primary button-small" id="header-cta" href="https://zesty-sorbet-f6d433.netlify.app/register" data-i18n="start">Get started</a>
       </div>
     </div>
   </header>
@@ -608,11 +608,22 @@
           </p>
         </div>
 
-        <div class="video-placeholder reveal" role="img" aria-label="Placeholder for the About the Product video" data-i18n-aria="videoAria">
-          <div class="video-play" aria-hidden="true">▶</div>
-          <strong data-i18n="videoTitle">About the Product video</strong>
-          <span data-i18n="videoText">Replace this block with your final YouTube embed when it is available.</span>
-        </div>
+        <figure class="video-embed reveal">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/zLoyj8Rw4oA?rel=0"
+              title="About the Product video"
+              data-i18n-title="videoTitle"
+              loading="lazy"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <figcaption data-i18n="videoText">
+            Narrated in Spanish, with Spanish and English subtitles. The application shows demo data.
+          </figcaption>
+        </figure>
       </div>
     </section>
 

@@ -91,7 +91,6 @@ const translations = {
     fleetImageAlt: "Fleet of vehicles",
     personalImageAlt: "Vehicle for individual owners and buyers",
     dashboardAlt: "FleetProof dashboard preview with vehicle alerts and reports",
-    videoAria: "Placeholder for the About the Product video",
     navProduct: "Product",
     navSolutions: "Solutions",
     navPlans: "Plans",
@@ -217,7 +216,7 @@ const translations = {
     aboutDisclaimer:
       "FleetProof does not replace official certificates or legal advice. Every result must preserve its source, consultation date and evidence.",
     videoTitle: "About the Product video",
-    videoText: "Replace this block with your final YouTube embed when it is available.",
+    videoText: "Narrated in Spanish, with Spanish and English subtitles. The application shows demo data.",
 
     finalEyebrow: "FLEET IN COMPLIANCE. FEWER SURPRISES.",
     finalTitle: "Start today with FleetProof",
@@ -246,7 +245,6 @@ const translations = {
     fleetImageAlt: "Flota de vehículos",
     personalImageAlt: "Vehículo para propietarios y compradores",
     dashboardAlt: "Vista previa de FleetProof con alertas y reportes vehiculares",
-    videoAria: "Espacio reservado para el video sobre el producto",
     navProduct: "Producto",
     navSolutions: "Soluciones",
     navPlans: "Planes",
@@ -372,7 +370,7 @@ const translations = {
     aboutDisclaimer:
       "FleetProof no reemplaza certificados oficiales ni asesoría legal. Cada resultado debe conservar su fuente, fecha de consulta y evidencia.",
     videoTitle: "Video About the Product",
-    videoText: "Reemplaza este bloque con el embed final de YouTube cuando esté disponible.",
+    videoText: "Narrado en español, con subtítulos en español e inglés. La aplicación muestra datos de demostración.",
 
     finalEyebrow: "FLOTA EN REGLA. MENOS SORPRESAS.",
     finalTitle: "Empieza hoy con FleetProof",
@@ -431,6 +429,11 @@ function translatePage(language) {
   document.querySelectorAll("[data-i18n-alt]").forEach((image) => {
     const value = translations[language][image.dataset.i18nAlt];
     if (value !== undefined) image.setAttribute("alt", value);
+  });
+
+  document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+    const value = translations[language][element.dataset.i18nTitle];
+    if (value !== undefined) element.setAttribute("title", value);
   });
 
   document.querySelectorAll("[data-price-pen][data-price-usd]").forEach((price) => {
@@ -602,7 +605,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 /* Feature 5 / Commit 5 — Integration points with the FleetProof Vue Web App. */
-const WEB_APP_URL = "https://fleetproof-webapp.netlify.app";
+const WEB_APP_URL = "https://zesty-sorbet-f6d433.netlify.app";
 
 const APP_ROUTES = {
   login: `${WEB_APP_URL}/login`,
